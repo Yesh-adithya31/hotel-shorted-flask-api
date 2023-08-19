@@ -28,9 +28,9 @@ def get_reviews():
     if sorted_by == "food":
         sorted_results_filtered = filtered_results.sort_values(by="Food_Prediction", ascending=False)
     elif sorted_by == "staff":
-        sorted_results_filtered = filtered_results.sort_values(by="Staff Prediction", ascending=False)
+        sorted_results_filtered = filtered_results.sort_values(by="Staff_Prediction", ascending=False)
     elif sorted_by == "env":
-        sorted_results_filtered = filtered_results.sort_values(by="Environment Prediction", ascending=False)    
+        sorted_results_filtered = filtered_results.sort_values(by="Environment_Prediction", ascending=False)    
 
     result_data = sorted_results_filtered.to_dict(orient='records')
     return jsonify(result_data)
@@ -42,9 +42,9 @@ def get_most_reviews_food():
     if food_filter is None:
         return jsonify({"error": "Food parameter is missing."}), 400
     
-    filtered_results = sorted_results[sorted_results["Most reviewed foods"] == food_filter]
+    filtered_results = sorted_results[sorted_results["Most_reviewed_foods"] == food_filter]
 
-    sorted_results_filtered = filtered_results.sort_values(by="Food Prediction", ascending=False)
+    sorted_results_filtered = filtered_results.sort_values(by="Food_Prediction", ascending=False)
         
     result_data = sorted_results_filtered.to_dict(orient='records')
     return jsonify(result_data)
