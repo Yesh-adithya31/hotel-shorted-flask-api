@@ -36,7 +36,7 @@ You can create this project by cloningit
 
 ### Prerequisites
 
-You need to install PYTHON_VERSION=3.9 upword version.
+You need to install `PYTHON_VERSION=3.9` upword version.
 * python
   ```sh
   install latest python version
@@ -59,7 +59,8 @@ _This is the step you have to follow._
    ```js
    python app.py
    ```
-   'OR'
+   `OR`
+   
    ```js
    py app.py
    ```
