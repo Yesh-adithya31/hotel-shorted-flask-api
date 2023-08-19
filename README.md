@@ -51,7 +51,7 @@ _This is the step you have to follow._
    ```sh
    git clone https://github.com/Yesh-adithya31/hotel-shorted-flask-api.git
    ```
-3. Install NPM packages
+3. Install PIP packages
    ```sh
    pip install -r requirements.txt
    ```
