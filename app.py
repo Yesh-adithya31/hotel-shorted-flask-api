@@ -26,7 +26,7 @@ def get_reviews():
     sorted_results_filtered = []
     
     if sorted_by == "food":
-        sorted_results_filtered = filtered_results.sort_values(by="Food Prediction", ascending=False)
+        sorted_results_filtered = filtered_results.sort_values(by="Food_Prediction", ascending=False)
     elif sorted_by == "staff":
         sorted_results_filtered = filtered_results.sort_values(by="Staff Prediction", ascending=False)
     elif sorted_by == "env":

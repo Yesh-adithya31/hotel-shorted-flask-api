@@ -10,7 +10,25 @@
 			"name": "Hotel-API",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://hotel-shorted-flask-api.onrender.com/get_most_review_food?food=Biryani",
+					"protocol": "https",
+					"host": [
+						"hotel-shorted-flask-api",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"get_most_review_food"
+					],
+					"query": [
+						{
+							"key": "food",
+							"value": "Biryani"
+						}
+					]
+				}
 			},
 			"response": [
 				{
@@ -19,12 +37,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/get_reviews?city=Colombo&sorted=food",
-							"protocol": "http",
+							"raw": "https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=food",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"hotel-shorted-flask-api",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"get_reviews"
 							],
@@ -70,12 +89,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/get_reviews?city=Colombo&sorted=staff",
-							"protocol": "http",
+							"raw": "https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=staff",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"hotel-shorted-flask-api",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"get_reviews"
 							],
@@ -121,12 +141,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/get_reviews?city=Colombo&sorted=env",
-							"protocol": "http",
+							"raw": "https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=env",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"hotel-shorted-flask-api",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"get_reviews"
 							],
@@ -165,6 +186,54 @@
 					],
 					"cookie": [],
 					"body": "[\n    {\n        \"City\": \"Colombo\",\n        \"Description\": \"Sri Lanka's restaurants offer diverse flavors – aromatic curries, fresh seafood, and rich spices – embodying the island's vibrant culture.\",\n        \"Environment Prediction\": 4.185000000000003,\n        \"Food Prediction\": 4.086000000000001,\n        \"Image\": \"https://absolutesrilanka.asia/files/accommodation/246/gallery/5581c1e561fb.jpg\",\n        \"Most reviewed foods\": \"Vegetable Kottu Roti\",\n        \"Restaurant name\": \"Samadhi Restaurant \",\n        \"Staff Prediction\": 3.8629999999999995,\n        \"Uniq ID\": 918\n    },\n    {\n        \"City\": \"Colombo\",\n        \"Description\": \"Sri Lanka's restaurants offer diverse flavors – aromatic curries, fresh seafood, and rich spices – embodying the island's vibrant culture.\",\n        \"Environment Prediction\": 3.9580000000000006,\n        \"Food Prediction\": 3.8549999999999955,\n        \"Image\": \"https://i.travelapi.com/lodging/45000000/44810000/44801400/44801386/030d0cdb_z.jpg\",\n        \"Most reviewed foods\": \"Fish Ambul Thiyal\",\n        \"Restaurant name\": \"Edan Rest\",\n        \"Staff Prediction\": 3.5529999999999977,\n        \"Uniq ID\": 900\n    },\n    {\n        \"City\": \"Colombo\",\n        \"Description\": \"Sri Lanka's restaurants offer diverse flavors – aromatic curries, fresh seafood, and rich spices – embodying the island's vibrant culture.\",\n        \"Environment Prediction\": 3.943,\n        \"Food Prediction\": 3.9959999999999973,\n        \"Image\": \"https://q-xx.bstatic.com/xdata/images/hotel/max1000/386328511.jpg?k=b0d93e195220f5bdcfc76903ea294b0e0839402abe5f9b097892c7cff172ad5c\",\n        \"Most reviewed foods\": \"Biryani\",\n        \"Restaurant name\": \"Tango Rest\",\n        \"Staff Prediction\": 3.6420000000000012,\n        \"Uniq ID\": 894\n    },\n    {\n        \"City\": \"Colombo\",\n        \"Description\": \"Sri Lanka's restaurants offer diverse flavors – aromatic curries, fresh seafood, and rich spices – embodying the island's vibrant culture.\",\n        \"Environment Prediction\": 3.938000000000001,\n        \"Food Prediction\": 3.880999999999999,\n        \"Image\": \"https://q-xx.bstatic.com/xdata/images/hotel/840x460/85506741.jpg?k=940d2487b080ea2f539e6f7efb4e6572538c861cb4d31b1c8e604a51cf4450a6&o=\",\n        \"Most reviewed foods\": \"Egg Hoppers\",\n        \"Restaurant name\": \"Podium Restaurant & Bar\",\n        \"Staff Prediction\": 3.695000000000001,\n        \"Uniq ID\": 902\n    },\n    {\n        \"City\": \"Colombo\",\n        \"Description\": \"Sri Lanka's restaurants offer diverse flavors – aromatic curries, fresh seafood, and rich spices – embodying the island's vibrant culture.\",\n        \"Environment Prediction\": 3.8939999999999966,\n        \"Food Prediction\": 4.199999999999996,\n        \"Image\": \"https://danisco-leisure-bunglow-kandy.booked.net/data/Photos/OriginalPhoto/12968/1296844/1296844714/Danisco-Leisure-Bunglow-Hotel-Kandy-Exterior.JPEG\",\n        \"Most reviewed foods\": \"Fish Curry\",\n        \"Restaurant name\": \"Yewon Restaurant & Bakers in Kundasale\",\n        \"Staff Prediction\": 3.5769999999999995,\n        \"Uniq ID\": 903\n    },\n    {\n        \"City\": \"Colombo\",\n        \"Description\": \"Sri Lanka's restaurants offer diverse flavors – aromatic curries, fresh seafood, and rich spices – embodying the island's vibrant culture.\",\n        \"Environment Prediction\": 3.779,\n        \"Food Prediction\": 4.037000000000001,\n        \"Image\": \"https://lh3.googleusercontent.com/p/AF1QipPk4umkDKKATDjIe34frEsTm-0JxNVdUc5_h15u=s1600-h380\",\n        \"Most reviewed foods\": \"Devilled dishes\",\n        \"Restaurant name\": \"Royal Mount\",\n        \"Staff Prediction\": 3.417,\n        \"Uniq ID\": 893\n    },\n    {\n        \"City\": \"Colombo\",\n        \"Description\": \"Sri Lanka's restaurants offer diverse flavors – aromatic curries, fresh seafood, and rich spices – embodying the island's vibrant culture.\",\n        \"Environment Prediction\": 3.6709999999999976,\n        \"Food Prediction\": 3.859999999999999,\n        \"Image\": \"https://www.yamu.lk/wp-content/uploads/2022/02/podium-restaurant.jpg\",\n        \"Most reviewed foods\": \"Fish Bun\",\n        \"Restaurant name\": \"Peak Residence\",\n        \"Staff Prediction\": 3.4390000000000005,\n        \"Uniq ID\": 915\n    }\n]"
+				},
+				{
+					"name": "Most-Review-Food",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://hotel-shorted-flask-api.onrender.com/get_most_review_food?food=Biryani",
+							"protocol": "https",
+							"host": [
+								"hotel-shorted-flask-api",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"get_most_review_food"
+							],
+							"query": [
+								{
+									"key": "food",
+									"value": "Biryani"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2868"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.6"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Aug 2023 11:17:12 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"City\": \"Mannar\",\n        \"Description\": \"Sri Lanka's restaurants offer diverse flavors – aromatic curries, fresh seafood, and rich spices – embodying the island's vibrant culture.\",\n        \"Environment Prediction\": 3.9769999999999994,\n        \"Food Prediction\": 4.1839999999999975,\n        \"Image\": \"https://q-xx.bstatic.com/xdata/images/hotel/max500/344866386.jpg?k=c094d50852d0e70fe937ff195873f4a0ada52a275d72501f8fc033c17089cbce&o=\",\n        \"Most reviewed foods\": \"Biryani\",\n        \"Restaurant name\": \"Priyangi Hills\",\n        \"Staff Prediction\": 3.5920000000000005,\n        \"Uniq ID\": 412\n    },\n    {\n        \"City\": \"Anuradhapura\",\n        \"Description\": \"Sri Lanka's restaurants offer diverse flavors – aromatic curries, fresh seafood, and rich spices – embodying the island's vibrant culture.\",\n        \"Environment Prediction\": 3.951000000000002,\n        \"Food Prediction\": 4.133999999999996,\n        \"Image\": \"https://q-xx.bstatic.com/xdata/images/hotel/max500/344866386.jpg?k=c094d50852d0e70fe937ff195873f4a0ada52a275d72501f8fc033c17089cbce&o=\",\n        \"Most reviewed foods\": \"Biryani\",\n        \"Restaurant name\": \"Royal Mount\",\n        \"Staff Prediction\": 3.6350000000000007,\n        \"Uniq ID\": 308\n    },\n    {\n        \"City\": \"Ratnapura\",\n        \"Description\": \"Sri Lanka's restaurants offer diverse flavors – aromatic curries, fresh seafood, and rich spices – embodying the island's vibrant culture.\",\n        \"Environment Prediction\": 4.063000000000003,\n        \"Food Prediction\": 4.029000000000002,\n        \"Image\": \"https://media-cdn.tripadvisor.com/media/photo-s/10/fc/06/24/restaurant.jpg\",\n        \"Most reviewed foods\": \"Biryani\",\n        \"Restaurant name\": \"Misty Mornings Cafe\",\n        \"Staff Prediction\": 3.7719999999999994,\n        \"Uniq ID\": 618\n    },\n    {\n        \"City\": \"Colombo\",\n        \"Description\": \"Sri Lanka's restaurants offer diverse flavors – aromatic curries, fresh seafood, and rich spices – embodying the island's vibrant culture.\",\n        \"Environment Prediction\": 3.943,\n        \"Food Prediction\": 3.9959999999999973,\n        \"Image\": \"https://q-xx.bstatic.com/xdata/images/hotel/max1000/386328511.jpg?k=b0d93e195220f5bdcfc76903ea294b0e0839402abe5f9b097892c7cff172ad5c\",\n        \"Most reviewed foods\": \"Biryani\",\n        \"Restaurant name\": \"Tango Rest\",\n        \"Staff Prediction\": 3.6420000000000012,\n        \"Uniq ID\": 894\n    },\n    {\n        \"City\": \"Nuwara Eliya\",\n        \"Description\": \"Sri Lanka's restaurants offer diverse flavors – aromatic curries, fresh seafood, and rich spices – embodying the island's vibrant culture.\",\n        \"Environment Prediction\": 3.568,\n        \"Food Prediction\": 3.9219999999999953,\n        \"Image\": \"https://nerdnomads.com/wp-content/uploads/2017/03/High_tea_Grand_Hotel_Nuwara_Eliya2.jpg\",\n        \"Most reviewed foods\": \"Biryani\",\n        \"Restaurant name\": \"Misty Mornings Cafe\",\n        \"Staff Prediction\": 3.3760000000000043,\n        \"Uniq ID\": 108\n    }\n]"
 				}
 			]
 		}
