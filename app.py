@@ -6,6 +6,10 @@ app = Flask(__name__)
 # Load the sorted results from the .pkl file
 sorted_results = pd.read_pickle('model/final_sorted_results.h5')
 
+@app.route('/')
+def home():
+    return "Welcome to the Hotel Best Review Finder Prediction API!"
+
 @app.route('/get_reviews', methods=['GET'])
 def get_reviews():
     sorted_by = request.args.get('sorted')
