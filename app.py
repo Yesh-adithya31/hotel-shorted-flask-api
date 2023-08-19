@@ -35,5 +35,19 @@ def get_reviews():
     result_data = sorted_results_filtered.to_dict(orient='records')
     return jsonify(result_data)
 
+@app.route('/get_most_review_food', methods=['GET'])
+def get_most_reviews_food():
+    food_filter = request.args.get('food')
+    
+    if food_filter is None:
+        return jsonify({"error": "Food parameter is missing."}), 400
+    
+    filtered_results = sorted_results[sorted_results["Most reviewed foods"] == food_filter]
+
+    sorted_results_filtered = filtered_results.sort_values(by="Food Prediction", ascending=False)
+        
+    result_data = sorted_results_filtered.to_dict(orient='records')
+    return jsonify(result_data)
+
 if __name__ == '__main__':
     app.run(debug=True)
