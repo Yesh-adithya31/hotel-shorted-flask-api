@@ -138,15 +138,15 @@ _This is the step you have to follow._
 5. Implement functions for each endpoint:
     * For `/get_reviews`, you're handling the city filtering and sorting based on the `sorted` parameter. You use the Pandas DataFrame operations to filter and sort the data accordingly.
       example:
-              #### Hotel-Sorted-API
+              * ### Hotel-Sorted-API
               ```sh
                   https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=food
               ```
-              #### Staff-Sorted-API
+              * ### Staff-Sorted-API
               ```sh
                   https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=staff
               ```
-              #### Environment-Sorted-API
+              * ### Environment-Sorted-API
               ```sh
                   https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=env
               ```
