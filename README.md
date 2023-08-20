@@ -132,24 +132,24 @@ _This is the step you have to follow._
     ```
     * `/`: Define the root route, which returns a simple welcome message.
     * `/get_reviews`: Define an endpoint to retrieve sorted and filtered reviews based on city and sorting criteria. The query parameters `city` and `sorted` are used to filter and sort the results.
-           * The sorted_by parameter is used to determine the sorting criteria (`food`, `staff`, or `env`).
+    * The sorted_by parameter is used to determine the sorting criteria (`food`, `staff`, or `env`).
     * `/get_most_review_food`: Define an endpoint to retrieve reviews based on the most reviewed foods. The query parameter food is used to filter the results.
       
 5. Implement functions for each endpoint:
     * For `/get_reviews`, you're handling the city filtering and sorting based on the `sorted` parameter. You use the Pandas DataFrame operations to filter and sort the data accordingly.
-      example:
-              * ### Hotel-Sorted-API
-              ```sh
-                  https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=food
-              ```
-              * ### Staff-Sorted-API
-              ```sh
-                  https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=staff
-              ```
-              * ### Environment-Sorted-API
-              ```sh
-                  https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=env
-              ```
+    * - example:
+    * ### Hotel-Sorted-API
+      ```sh
+          https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=food
+      ```
+    * ### Staff-Sorted-API
+      ```sh
+          https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=staff
+      ```
+    * ### Environment-Sorted-API
+      ```sh
+          https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=env
+      ```
     * For `/get_most_review_food`, you're handling the filtering based on the most reviewed foods using the `food` parameter.
       example:
               #### Most-Review-Food-API
