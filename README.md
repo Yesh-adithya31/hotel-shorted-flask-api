@@ -141,19 +141,23 @@ _This is the step you have to follow._
       ```sh
           https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=food
       ```
+      ![food-screenshot][food-screenshot]
     * #### Staff-Sorted-API
       ```sh
           https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=staff
       ```
+      ![staff-screenshot][staff-screenshot]
     * #### Environment-Sorted-API
       ```sh
           https://hotel-shorted-flask-api.onrender.com/get_reviews?city=Colombo&sorted=env
       ```
+      ![env-response-screenshot][env-response-screenshot]
     * For `/get_most_review_food`, you're handling the filtering based on the most reviewed foods using the `food` parameter.
     * #### Most-Review-Food-API
       ```sh
           https://hotel-shorted-flask-api.onrender.com/get_most_review_food?food=Biryani
       ```
+      ![mostRev-food-screenshot][mostRev-food-screenshot]
 6. Run the app:
    * `if __name__ == '__main__': app.run(debug=True)`: Start the Flask app when you run the script directly.
 
@@ -165,8 +169,9 @@ This `Flask API` provides endpoints to retrieve reviews based on different crite
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[food-screenshot]: Images/Food-Response.PNG
+[env-response-screenshot]: Images/Env-Response.PNG
+[staff-screenshot]: Images/Staff-Response.PNG
+[mostRev-food-screenshot]: Images/MostRev-Food-Response.PNG
 [Flask]: https://flask.palletsprojects.com/en/2.3.x/
 [Flask-url]: https://img.shields.io/badge/flask-78c7d1?style=for-the-badge&logo=flask&logoColor=white
