@@ -16,6 +16,7 @@ This Flask app provides a simple API for users to retrieve hotel reviews and pre
 Here this project developement using Flask Framework.
 
 * [![Flask][Flask-url]][Flask]
+* ![MachineLearn-url][MachineLearn-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,3 +176,4 @@ This `Flask API` provides endpoints to retrieve reviews based on different crite
 [mostRev-food-screenshot]: Images/MostRev-Food-Response.PNG
 [Flask]: https://flask.palletsprojects.com/en/2.3.x/
 [Flask-url]: https://img.shields.io/badge/flask-78c7d1?style=for-the-badge&logo=flask&logoColor=white
+[MachineLearn-url]: https://img.shields.io/badge/Machine%20Learning-555555?style=for-the-badge
