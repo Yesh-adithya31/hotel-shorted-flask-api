@@ -17,6 +17,8 @@ Here this project developement using Flask Framework.
 
 * [![Flask][Flask-url]][Flask]
 * ![MachineLearn-url][MachineLearn-url]
+* ![pandas-url][pandas-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,3 +179,4 @@ This `Flask API` provides endpoints to retrieve reviews based on different crite
 [Flask]: https://flask.palletsprojects.com/en/2.3.x/
 [Flask-url]: https://img.shields.io/badge/flask-78c7d1?style=for-the-badge&logo=flask&logoColor=white
 [MachineLearn-url]: https://img.shields.io/badge/Machine%20Learning-555555?style=for-the-badge
+[pandas-url]: https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white
